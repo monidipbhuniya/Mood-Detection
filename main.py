@@ -49,9 +49,9 @@ def index():
             # Detect emotion
             emotion, confidence = detect_emotion(file_path)
 
-            return render_template('index.html', image_path=file_path, emotion=emotion, confidence=confidence)
+            return render_template(r'D:\project\Mood detection\templates\index.html', image_path=file_path, emotion=emotion, confidence=confidence)
 
-    return render_template('index.html')
+    return render_template(r'D:\project\Mood detection\templates\index.html')
 
 from flask import request, jsonify
 import base64
